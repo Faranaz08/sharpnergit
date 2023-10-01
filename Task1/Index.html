@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js"></script>
+</head>
+<body>
+<div class="Box">
+<h3  id="id1"style="text-align: center;"> Book a Call</h3>
+<p style=" text-align: center;">Book a call slot and our representation will call you within the 1hr of the selected form</p>
+<div class="Imag">
+<div class="container">
+  <form  action="#" onsubmit="formdisp(event)">
+    <label for="fname"> Name</label>
+    <input type="text" id="name" name="name" placeholder="ENter name..">
+
+    <label for="ename">EMail</label>
+    <input type="text" id="ename" name="email" placeholder="EMail.">
+
+    <label for="Phone">Phone</label>
+    <input type="text" id="phno" name="phno" placeholder="Phone Numbeer.">
+
+
+    <br>
+    <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" name="add1" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div><br>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" name="add2" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" name="city" class="form-control" id="inputCity">
+      </div>
+      <br>
+      <label for="Call">Time for Call</label>
+    <input type="date" id="datei" name="call" placeholder="choose.">
+    <input type="time" id="timei" name="tcall" placeholder="choose.">
+    <br>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" name="zip" class="form-control" id="inputZip">
+      </div>
+    <br>
+    <input type="submit" value="Get a Call" onclick="console.log(this.form.elements)" style="margin: auto;">
+  </form>
+</div>
+</div>
+</div>
+
+</body>
+</html>
