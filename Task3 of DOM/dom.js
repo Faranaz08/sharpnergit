@@ -19,14 +19,35 @@
 
 //Get element by ID
 //console.log(document.getElementById('header-title'));
-var headerTitle=document.getElementById('header-title')
+// var headerTitle=document.getElementById('header-title')
 // console.log(headerTitle);
 // headerTitle.textContent='Hello';
 // headerTitle.innerText='goodbye';
 // console.log(headerTitle.textContent);
 // console.log(headerTitle.innerText);
 // headerTitle.innerHTML='<h3>Hello</h3>';
-headerTitle.style.border='2px solid black';
-const addItemButton = document.getElementById("add-item-button");
-addItemButton.style.fontWeight = "bold";
-addItemButton.style.color = "green";
+// headerTitle.style.border='2px solid black';
+// const addItemButton = document.getElementById("add-item-button");
+// addItemButton.style.fontWeight = "bold";
+// addItemButton.style.color = "green";
+
+
+
+//GETELEMENT bY Class NAme
+
+// var items = document. getElementsByClassName('list-group-item');
+//  console.log(items);
+// console.log(items[1]);
+// items [1].textContent = 'Hello 2';
+// items[1].style.fontWeight = 'bold';
+// items[1].style.backgroundColor='yellow';
+var items = document. getElementsByClassName('list-group-item');
+
+items[2].style.backgroundColor='green';
+
+
+// items.style.backgroundColor='black'; this will not work so for loop
+
+for(var i=0;i<items.length;i++){
+    items[i].style.fontWeight='bold' ;
+}
