@@ -54,11 +54,11 @@
 
 
 //Get element by Tag name
-var li = document.getElementsByTagName('li');
-console.log(li);
-console.log(li[1]);
-li[1].textContent = 'Hello 2';
-li[1].style.fontWeight = 'bold';
+// var li = document.getElementsByTagName('li');
+// console.log(li);
+// console.log(li[1]);
+// li[1].textContent = 'Hello 2';
+// li[1].style.fontWeight = 'bold';
 // li[1].style.backgroundColor='yellow';
 // var items = document.getElementsByClassName('list-group-item');
 
@@ -67,12 +67,43 @@ li[1].style.fontWeight = 'bold';
 
 // items.style.backgroundColor='black'; this will not work so for loop
 
-for(var i=0;i<li.length;i++){
-    li[i].style.fontWeight='bold' ;
-    li[i].style.backgroundColor='green';
-}
+// for(var i=0;i<li.length;i++){
+//     li[i].style.fontWeight='bold' ;
+//     li[i].style.backgroundColor='green';
+// }
 //And try editing it with getelementsbyclassname and then by getelementbytagname
-var items = document. getElementsByClassName('list-group-item');
-for(var i=0;i<items.length;i++){
-    items[i].textContent='change by class' ;
-}
+// var items = document. getElementsByClassName('list-group-item');
+// for(var i=0;i<items.length;i++){
+//     items[i].textContent='change by class' ;
+// }
+
+
+// QUERYSELECTOR //
+var header = document.querySelector('#main-header');
+header.style.borderfaction ='solid 4px #ccc';
+var input = document.querySelector('input');
+ input.value= "Hello World";
+
+
+
+var submit = document.querySelector('input[type="submit"]');
+ submit.value= "SEND";
+var item = document.querySelector( ".list-group-item");
+item.style.color ='red';
+ var lastItem = document.querySelector('.list-group-item:last-child');
+lastItem.style.color = 'blue';
+ var secondItem = document.querySelector
+secondItem.style.color = 'coral';
+
+
+Queryselectoorall
+var titles=document.querySelectorAll('.title');
+console.log(titles);
+titles[0].textContent='Hello';
+var odd=document.querySelectorAll('li:nth-child(odd)');
+
+
+//Make the 2nd item have green background color
+// Make the 3rd item invisible
+
+
